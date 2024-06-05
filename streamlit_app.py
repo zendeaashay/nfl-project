@@ -2,7 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import altair as alt
-
+import nfl_data_py as nfl
+nfl.import_pbp_data(years, columns, downcast=True, cache=False, alt_path=None)
+years
 # Page title
 st.set_page_config(page_title='Interactive Data Explorer', page_icon='📊')
 st.title('📊 Interactive Data Explorer')
